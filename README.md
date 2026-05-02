@@ -1,9 +1,26 @@
-AI Portfolio – Mahdi
+AI Applications Portfolio – Mahdi Mohammadkhani
+Overview
 
-Welcome to my AI portfolio! This repository highlights my expertise in machine learning, data analysis, and real-world AI applications. Inside, you’ll find:
+This repository showcases my coursework from the AI Applications class. It includes key projects, learnings, and resources, organized to present a professional portfolio for potential employers.
 
-Case studies applying AI to solve industry challenges.
-Machine learning models and techniques I’ve mastered.
-Tools like Python, TensorFlow, and scikit-learn.
+Structure
+Projects: Major assignments and case studies from the semester.
+Notes: Summaries of key concepts and topics covered.
+Resources: Links and materials that supported my learning.
+Key Projects
+AGI Case Study (Transportation)
+Analyzed the potential impact of AGI on transportation systems.
+Generative AI Ethics Case Study
+Investigated ethical challenges in generative AI applications.
+NASA AI Conceptual Design
+Designed an AI solution for monitoring environmental changes using satellite data.
+Skills & Tools
+Machine Learning (Concepts & Applications)
+AI Ethics
+AI System Design
+Problem-Solving with AI
+Contact
 
-I’m always open to collaboration and feedback—feel free to explore and connect!
+For more details or inquiries, reach out:
+
+Email: mahdicj@yahoo.com
