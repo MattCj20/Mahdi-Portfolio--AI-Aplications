@@ -1,5 +1,4 @@
 AI Applications Portfolio – Mahdi Mohammadkhani
-Overview
 
 This repository showcases my coursework from the AI Applications class. It includes key projects, learnings, and resources, organized to present a professional portfolio for potential employers.
 
