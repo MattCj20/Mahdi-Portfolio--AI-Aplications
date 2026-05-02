@@ -1,7 +1,9 @@
-Welcome to my AI portfolio! This repository contains key projects and assignments from my coursework. You’ll find:
+AI Portfolio – Mahdi
 
-Case studies applying AI to real-world problems.
-Machine learning models and data analysis projects.
-Tools used, like Python and popular AI frameworks.
+Welcome to my AI portfolio! This repository highlights my expertise in machine learning, data analysis, and real-world AI applications. Inside, you’ll find:
 
-Feel free to explore each folder for more details!
+Case studies applying AI to solve industry challenges.
+Machine learning models and techniques I’ve mastered.
+Tools like Python, TensorFlow, and scikit-learn.
+
+I’m always open to collaboration and feedback—feel free to explore and connect!
