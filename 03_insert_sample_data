@@ -1,0 +1,40 @@
+-- =========================================================
+-- File: 03_insert_sample_data.sql
+-- Purpose: Insert sample data into each table
+-- =========================================================
+
+INSERT INTO vehicles VALUES (1, 'VIN001', 'Toyota', 'Camry', 2020, 45000, 'ACTIVE')
+
+INSERT INTO vehicles VALUES (2, 'VIN002', 'Ford', 'Transit', 2021, 38000, 'MAINTENANCE')
+
+INSERT INTO vehicles VALUES (3, 'VIN003', 'Tesla', 'Model 3', 2022, 22000, 'ACTIVE')
+
+INSERT INTO drivers VALUES (1, 'John', 'Smith', 'LIC1001', '5551112222', 'ACTIVE')
+
+INSERT INTO drivers VALUES (2, 'Sarah', 'Johnson', 'LIC1002', '5553334444', 'ACTIVE')
+
+INSERT INTO drivers VALUES (3, 'Michael', 'Brown', 'LIC1003', '5555556666', 'ACTIVE')
+
+INSERT INTO routes VALUES (1, 'Route A', 'Houston', 'Dallas', 240)
+
+INSERT INTO routes VALUES (2, 'Route B', 'Houston', 'Austin', 165)
+
+INSERT INTO routes VALUES (3, 'Route C', 'Houston', 'San Antonio', 200)
+
+INSERT INTO trip_assignments VALUES (1, 1, 1, 1, DATE '2026-05-01', 'COMPLETED')
+
+INSERT INTO trip_assignments VALUES (2, 2, 2, 2, DATE '2026-05-02', 'SCHEDULED')
+
+INSERT INTO trip_assignments VALUES (3, 3, 3, 3, DATE '2026-05-03', 'SCHEDULED')
+
+INSERT INTO maintenance_records VALUES (1, 1, DATE '2026-04-15', 'Oil Change', 80, 'Routine maintenance')
+
+INSERT INTO maintenance_records VALUES (2, 2, DATE '2026-04-20', 'Brake Repair', 450, 'Vehicle placed in maintenance')
+
+INSERT INTO maintenance_records VALUES (3, 3, DATE '2026-04-25', 'Tire Replacement', 300, 'Replaced front tires')
+
+INSERT INTO fuel_logs VALUES (1, 1, DATE '2026-04-28', 12, 45, 45000)
+
+INSERT INTO fuel_logs VALUES (2, 2, DATE '2026-04-29', 20, 75, 38000)
+
+INSERT INTO fuel_logs VALUES (3, 3, DATE '2026-04-30', 10, 38, 22000)
