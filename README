@@ -1,0 +1,154 @@
+# Smart Transportation Fleet Management Database
+
+## Oracle APEX Relational Database Project
+
+**Student:** Mahdi Mohammadkhani
+**Course:** AI Applications and Database Systems
+**Platform:** Oracle APEX / Oracle SQL
+**Project Type:** Physical Database Design and SQL Development
+
+---
+
+# Project Overview
+
+The Smart Transportation Fleet Management Database project demonstrates the process of translating a logical Entity Relationship Diagram (ERD) into a fully functional physical database using Oracle SQL and Oracle APEX.
+
+This system is designed to manage transportation fleet operations by tracking vehicles, drivers, transportation routes, trip assignments, maintenance records, and fuel usage. The project focuses on relational database design, data integrity, SQL scripting, and Oracle APEX database implementation.
+
+The database was developed as part of an academic portfolio project to showcase practical SQL development skills, relational database knowledge, and Oracle APEX experience.
+
+---
+
+# Project Objectives
+
+The primary objectives of this project include:
+
+* Designing and implementing a relational transportation database
+* Creating physical database tables from a logical ERD
+* Applying primary keys, foreign keys, and integrity constraints
+* Demonstrating SQL DDL and DML operations
+* Testing data validation and constraint enforcement
+* Executing meaningful SQL queries for reporting and analysis
+* Demonstrating Oracle APEX SQL Workshop usage
+* Building a professional portfolio-ready database project
+
+---
+
+# Database Structure
+
+The project includes the following relational database tables:
+
+| Table Name            | Description                                                                      |
+| --------------------- | -------------------------------------------------------------------------------- |
+| `vehicles`            | Stores fleet vehicle information including VIN, make, model, mileage, and status |
+| `drivers`             | Stores driver information, contact details, and license numbers                  |
+| `routes`              | Stores transportation routes, locations, and travel distances                    |
+| `trip_assignments`    | Connects vehicles, drivers, and routes for scheduled trips                       |
+| `maintenance_records` | Tracks maintenance services, repair costs, and service dates                     |
+| `fuel_logs`           | Tracks vehicle fuel usage, costs, and odometer readings                          |
+
+---
+
+# SQL Files Included
+
+| File Name                   | Purpose                                                                    |
+| --------------------------- | -------------------------------------------------------------------------- |
+| `01_create_tables.sql`      | Creates all database tables                                                |
+| `02_add_constraints.sql`    | Adds primary keys, foreign keys, unique constraints, and check constraints |
+| `03_insert_sample_data.sql` | Inserts sample transportation data into all tables                         |
+| `04_dml_operations.sql`     | Demonstrates UPDATE, DELETE, ALTER, and backup table operations            |
+| `05_select_queries.sql`     | Includes reporting and testing SELECT queries                              |
+| `06_constraint_tests.sql`   | Includes successful and failed constraint validation tests                 |
+| `run_order.txt`             | Provides the recommended script execution order                            |
+
+---
+
+# Technologies Used
+
+* Oracle SQL
+* Oracle APEX
+* Relational Database Design
+* SQL DDL Statements
+* SQL DML Statements
+* Data Integrity Constraints
+* Entity Relationship Modeling
+* Oracle APEX SQL Workshop
+
+---
+
+# Features Implemented
+
+## Relational Database Design
+
+* Multiple related tables
+* One-to-many relationships
+* Foreign key enforcement
+* Normalized database structure
+
+## Data Integrity
+
+* Primary key constraints
+* Foreign key constraints
+* Unique constraints
+* Check constraints
+* Validation testing
+
+## SQL Operations
+
+* CREATE TABLE
+* ALTER TABLE
+* INSERT
+* UPDATE
+* DELETE
+* SELECT queries
+* Backup table creation
+
+## Reporting Queries
+
+* Vehicle reports
+* Driver trip assignments
+* Route analysis
+* Maintenance history
+* Fuel usage tracking
+
+---
+
+# Oracle APEX Execution Instructions
+
+1. Open Oracle APEX.
+2. Navigate to **SQL Workshop → SQL Commands**.
+3. Run the SQL files in the order listed in `run_order.txt`.
+4. Execute one statement at a time if required by the Oracle APEX environment.
+5. Capture screenshots of DDL execution, DML execution, SELECT query results, and constraint testing.
+
+---
+
+# Skills Demonstrated
+
+This project demonstrates practical experience with:
+
+* Oracle SQL development
+* Oracle APEX database implementation
+* Relational database modeling
+* SQL query development
+* Constraint validation and testing
+* Database normalization
+* Data integrity enforcement
+* Professional project documentation
+* Portfolio project organization
+
+---
+
+# Academic and Portfolio Purpose
+
+This project was created as part of a professional academic portfolio to demonstrate database development skills, SQL proficiency, Oracle APEX experience, and practical understanding of relational database systems.
+
+The project highlights the ability to design, implement, test, and document a complete database solution suitable for transportation and fleet management operations.
+
+---
+
+# Author
+
+**Mahdi Mohammadkhani**
+GitHub: `mattcj20`
+Email: `mahdicj@yahoo.com`
