@@ -1,0 +1,13 @@
+Recommended Oracle APEX Run Order
+
+1. 01_create_tables.sql
+2. 02_add_constraints.sql
+3. 03_insert_sample_data.sql
+4. 04_dml_operations.sql
+5. 05_select_queries.sql
+6. 06_constraint_tests.sql
+
+Important:
+- In SQL Commands, run one statement at a time.
+- Some constraint tests are supposed to fail.
+- Screenshot both successful results and intentional error messages.
