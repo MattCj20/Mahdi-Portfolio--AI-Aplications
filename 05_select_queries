@@ -1,0 +1,49 @@
+-- =========================================================
+-- File: 05_select_queries.sql
+-- Purpose: Meaningful SELECT queries for project testing
+-- =========================================================
+
+SELECT * FROM vehicles;
+
+SELECT * FROM drivers;
+
+SELECT * FROM routes;
+
+SELECT t.assignment_id,
+       v.make,
+       v.model,
+       d.first_name,
+       d.last_name,
+       r.route_name,
+       t.trip_date,
+       t.trip_status
+FROM trip_assignments t
+JOIN vehicles v ON t.vehicle_id = v.vehicle_id
+JOIN drivers d ON t.driver_id = d.driver_id
+JOIN routes r ON t.route_id = r.route_id;
+
+SELECT v.make,
+       v.model,
+       m.service_type,
+       m.cost,
+       m.maintenance_date
+FROM vehicles v
+JOIN maintenance_records m
+ON v.vehicle_id = m.vehicle_id;
+
+SELECT v.make,
+       v.model,
+       f.gallons,
+       f.fuel_cost,
+       f.odometer
+FROM vehicles v
+JOIN fuel_logs f
+ON v.vehicle_id = f.vehicle_id;
+
+SELECT route_name,
+       start_location,
+       end_location,
+       distance_miles
+FROM routes
+WHERE distance_miles > 180
+ORDER BY distance_miles DESC;
