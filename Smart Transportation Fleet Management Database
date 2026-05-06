@@ -1,0 +1,59 @@
+-- =========================================================
+-- Smart Transportation Fleet Management Database
+-- File: 01_create_tables.sql
+-- Purpose: Create database tables
+-- =========================================================
+
+CREATE TABLE vehicles (
+  vehicle_id NUMBER,
+  vin VARCHAR2(17),
+  make VARCHAR2(50),
+  model VARCHAR2(50),
+  vehicle_year NUMBER,
+  mileage NUMBER,
+  vehicle_status VARCHAR2(20)
+);
+
+CREATE TABLE drivers (
+  driver_id NUMBER,
+  first_name VARCHAR2(50),
+  last_name VARCHAR2(50),
+  license_no VARCHAR2(30),
+  phone VARCHAR2(20),
+  driver_status VARCHAR2(20)
+);
+
+CREATE TABLE routes (
+  route_id NUMBER,
+  route_name VARCHAR2(100),
+  start_location VARCHAR2(100),
+  end_location VARCHAR2(100),
+  distance_miles NUMBER
+);
+
+CREATE TABLE trip_assignments (
+  assignment_id NUMBER,
+  vehicle_id NUMBER,
+  driver_id NUMBER,
+  route_id NUMBER,
+  trip_date DATE,
+  trip_status VARCHAR2(20)
+);
+
+CREATE TABLE maintenance_records (
+  maintenance_id NUMBER,
+  vehicle_id NUMBER,
+  maintenance_date DATE,
+  service_type VARCHAR2(100),
+  cost NUMBER,
+  notes VARCHAR2(255)
+);
+
+CREATE TABLE fuel_logs (
+  fuel_id NUMBER,
+  vehicle_id NUMBER,
+  fuel_date DATE,
+  gallons NUMBER,
+  fuel_cost NUMBER,
+  odometer NUMBER
+);
