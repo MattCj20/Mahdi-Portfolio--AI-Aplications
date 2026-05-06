@@ -1,0 +1,47 @@
+ALTER TABLE vehicles ADD CONSTRAINT pk_vehicles PRIMARY KEY (vehicle_id);
+
+ALTER TABLE vehicles ADD CONSTRAINT uq_vehicles_vin UNIQUE (vin);
+
+ALTER TABLE vehicles ADD CONSTRAINT ck_vehicle_year CHECK (vehicle_year BETWEEN 1990 AND 2035);
+
+ALTER TABLE vehicles ADD CONSTRAINT ck_vehicle_mileage CHECK (mileage >= 0);
+
+ALTER TABLE vehicles ADD CONSTRAINT ck_vehicle_status CHECK (vehicle_status IN ('ACTIVE', 'MAINTENANCE', 'RETIRED'));
+
+ALTER TABLE drivers ADD CONSTRAINT pk_drivers PRIMARY KEY (driver_id);
+
+ALTER TABLE drivers ADD CONSTRAINT uq_drivers_license UNIQUE (license_no);
+
+ALTER TABLE drivers ADD CONSTRAINT ck_driver_status CHECK (driver_status IN ('ACTIVE', 'SUSPENDED', 'INACTIVE'));
+
+ALTER TABLE routes ADD CONSTRAINT pk_routes PRIMARY KEY (route_id);
+
+ALTER TABLE routes ADD CONSTRAINT uq_routes_name UNIQUE (route_name);
+
+ALTER TABLE routes ADD CONSTRAINT ck_route_distance CHECK (distance_miles > 0);
+
+ALTER TABLE trip_assignments ADD CONSTRAINT pk_trip_assignments PRIMARY KEY (assignment_id);
+
+ALTER TABLE trip_assignments ADD CONSTRAINT fk_trip_vehicle FOREIGN KEY (vehicle_id) REFERENCES vehicles(vehicle_id);
+
+ALTER TABLE trip_assignments ADD CONSTRAINT fk_trip_driver FOREIGN KEY (driver_id) REFERENCES drivers(driver_id);
+
+ALTER TABLE trip_assignments ADD CONSTRAINT fk_trip_route FOREIGN KEY (route_id) REFERENCES routes(route_id);
+
+ALTER TABLE trip_assignments ADD CONSTRAINT ck_trip_status CHECK (trip_status IN ('SCHEDULED', 'COMPLETED', 'CANCELLED'));
+
+ALTER TABLE maintenance_records ADD CONSTRAINT pk_maintenance PRIMARY KEY (maintenance_id);
+
+ALTER TABLE maintenance_records ADD CONSTRAINT fk_maint_vehicle FOREIGN KEY (vehicle_id) REFERENCES vehicles(vehicle_id);
+
+ALTER TABLE maintenance_records ADD CONSTRAINT ck_maintenance_cost CHECK (cost >= 0);
+
+ALTER TABLE fuel_logs ADD CONSTRAINT pk_fuel_logs PRIMARY KEY (fuel_id);
+
+ALTER TABLE fuel_logs ADD CONSTRAINT fk_fuel_vehicle FOREIGN KEY (vehicle_id) REFERENCES vehicles(vehicle_id);
+
+ALTER TABLE fuel_logs ADD CONSTRAINT ck_fuel_gallons CHECK (gallons > 0);
+
+ALTER TABLE fuel_logs ADD CONSTRAINT ck_fuel_cost CHECK (fuel_cost >= 0);
+
+ALTER TABLE fuel_logs ADD CONSTRAINT ck_fuel_odometer CHECK (odometer >= 0);
