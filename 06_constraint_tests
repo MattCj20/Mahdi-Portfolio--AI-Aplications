@@ -1,0 +1,17 @@
+-- Primary Key Test: should fail because vehicle_id 1 already exists
+INSERT INTO vehicles VALUES (1, 'VIN999', 'BMW', 'X5', 2024, 1000, 'ACTIVE', NULL);
+
+-- Unique Test: should fail because VIN001 already exists
+INSERT INTO vehicles VALUES (4, 'VIN001', 'Nissan', 'Altima', 2021, 20000, 'ACTIVE', NULL);
+
+-- Foreign Key Test: should fail because vehicle_id 99 does not exist
+INSERT INTO trip_assignments VALUES (4, 99, 1, 1, DATE '2026-05-04', 'SCHEDULED');
+
+-- Check Constraint Test: should fail because mileage cannot be negative
+INSERT INTO vehicles VALUES (5, 'VIN005', 'Honda', 'Accord', 2022, -500, 'ACTIVE', NULL);
+
+-- Check Constraint Test: should fail because gallons must be greater than zero
+INSERT INTO fuel_logs VALUES (4, 1, DATE '2026-05-05', 0, 55, 46000);
+
+-- Valid Insert Test: should succeed
+INSERT INTO fuel_logs VALUES (5, 1, DATE '2026-05-06', 15, 55, 46200);
